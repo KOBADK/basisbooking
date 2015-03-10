@@ -9,7 +9,6 @@ namespace Koba\BasicBookingBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class IndexController
@@ -20,8 +19,9 @@ use Symfony\Component\HttpFoundation\Response;
 class IndexController extends Controller {
   /**
    * @Route("/")
+   * @Template()
    */
   public function indexAction() {
-    return new Response("Index", 200);
+    return array();
   }
 }
