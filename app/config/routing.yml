@@ -1,0 +1,4 @@
+koba_basic_booking:
+    resource: "@KobaBasicBookingBundle/Controller/"
+    type:     annotation
+    prefix:   /
