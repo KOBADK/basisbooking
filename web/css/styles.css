@@ -1,0 +1,35 @@
+/**
+ *
+ * Custom styles for basis booking.
+ *
+ */
+.container-fluid {
+  max-width: 60em; }
+
+.navbar {
+  background: #409cda; }
+  .navbar .navbar-brand {
+    color: #fff; }
+
+.form_datetime {
+  position: relative; }
+  .form_datetime .add-on {
+    top: 0;
+    position: absolute;
+    bottom: 0;
+    padding: .5em;
+    right: 0; }
+  .form_datetime .form-control[type=text] {
+    cursor: pointer; }
+
+.date-wrapper {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%; }
+  .date-wrapper:first-child {
+    padding-right: 2em; }
+  .date-wrapper:last-child {
+    padding-left: 2em; }
+
+.btn-default {
+  float: right; }

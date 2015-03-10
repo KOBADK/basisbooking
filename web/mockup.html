@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ArosBooking</title>
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <script src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Add our custom styles. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Add our custom scripts -->
+    <script src="js/custom-datepicker.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            ArosBooking
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1>Booking af ressourcer på lokalcenter Marselis</h1>
+      <form>
+        <div class="form-group">
+          <label for="description">Kort beskrivelse</label>
+          <input type="text" class="form-control" id="description" placeholder="Indtast en kort beskrivelse til din booking f.eks. Foredrag med forfatter, Møde om digitalisering eller lignende">
+        </div>
+        <div class="form-group">
+          <label for="name">Navn og efternavn (Automatisk)</label>
+          <input disabled type="text" class="form-control" id="name" placeholder="Name" value="Navn Efternavn">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Indtast din e-mail-adresse">
+        </div>
+        <div class="form-group">
+          <label for="type">Type</label>
+          <select class="form-control" id="type">
+            <option value="" disabled selected>Vælg type</option>
+            <option>Institution</option>
+            <option>Privat virksomhed</option>
+            <option>Medarbejder i Aarhus kommune</option>
+            <option>Borger i Aarhus kommune</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ressource">Ressource/lokale</label>
+          <select class="form-control" id="ressource">
+            <option value="" disabled selected>Vælg ressource eller lokale</option>
+            <option>Mødelokale A</option>
+            <option>Mødelokale B</option>
+            <option>Mødelokale C</option>
+            <option>Hjørnestuen</option>
+            <option>Kantinen</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="date-wrapper">
+            <label for="starttime">Starttidspunkt</label>
+            <div class="input-append date form_datetime js-datetime">
+              <input size="16" type="text" value="" class="form-control" readonly id="starttime" placeholder="Vælg dag og tid">
+              <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+            </div>
+          </div><!-- Inline block fix
+       --><div class="date-wrapper">
+            <label for="endtime">Sluttidspunkt</label>
+            <div class="input-append date form_datetime js-datetime">
+              <input size="16" type="text" value="" class="form-control" readonly id="endtime" placeholder="Vælg dag og tid">
+              <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="additional">Evt. supplerende tekst</label>
+          <textarea class="form-control" id="additional" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Foretag booking</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

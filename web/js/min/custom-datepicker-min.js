@@ -1,0 +1,1 @@
+!function($){function t(){$(".js-datetime").datetimepicker({format:"dd MM yyyy - hh:ii",minuteStep:30})}$(document).ready(function(){t()})}(jQuery);
