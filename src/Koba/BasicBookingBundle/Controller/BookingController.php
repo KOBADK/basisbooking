@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains IndexController.
+ * Contains BookingController.
  */
 
 namespace Koba\BasicBookingBundle\Controller;
@@ -11,12 +11,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 /**
- * Class IndexController
+ * Class BookingController
  * @package Koba\BasicBookingBundle\Controller
  *
- * @Route("")
+ * @Route("/booking")
  */
-class IndexController extends Controller {
+class BookingController extends Controller {
   /**
    * @Route("")
    * @Template()
