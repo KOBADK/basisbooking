@@ -14,11 +14,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
  * Class IndexController
  * @package Koba\BasicBookingBundle\Controller
  *
- * @Route("/")
+ * @Route("")
  */
 class IndexController extends Controller {
   /**
-   * @Route("")
+   * @Route("/")
    * @Template()
    */
   public function indexAction() {
