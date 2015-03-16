@@ -2,3 +2,7 @@ koba_basic_booking:
     resource: "@KobaBasicBookingBundle/Controller/"
     type:     annotation
     prefix:   /
+
+itk_wayf:
+    resource: "@ItkWayfBundle/Resources/config/routing.yml"
+    prefix:   /login
