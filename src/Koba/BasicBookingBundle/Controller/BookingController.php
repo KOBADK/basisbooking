@@ -22,6 +22,14 @@ class BookingController extends Controller {
    * @Template()
    */
   public function indexAction() {
-    return array();
+    // Get resources.
+
+    // Add to render array.
+
+
+
+    return array(
+      "fisk" => "fusk"
+    );
   }
 }
